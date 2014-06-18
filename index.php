@@ -93,7 +93,7 @@
 			<div class="panel panel-default">
 				<div class="panel-body">
 					Réalisé par Sylvain Doignon
-					<span class="pull-right">2014 | <a href=""><span class="glyphicon glyphicon-send"></span> &#160;See on Github</a></span>
+					<span class="pull-right">2014 | <a href="https://github.com/sd65/piwakeLite"><span class="glyphicon glyphicon-send"></span> &#160;See on Github</a></span>
 				</div>
 			</div>
 
