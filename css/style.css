@@ -1,0 +1,74 @@
+h1 small, a, .dayNumber {
+	color: #4F9FCF;
+}
+
+.panel-body {
+	padding: 10px 15px;
+}
+
+.hour {
+  border-left: 1px solid #DDD;
+}
+
+.year {
+	margin-bottom: 1em;
+}
+
+#loader {
+    margin: 6em auto;
+    width: 128px;
+}
+
+#table {
+	font-size: 12px;
+}
+
+.table > tbody > tr > td, .table > tfoot > tr > td {
+    border-top: none;
+}
+
+.hasCourse {
+	background-color: #4F9FCF;
+	color: #ffffff;
+	border: 1px solid #DDD !important;
+}
+
+.nav > li > a {
+	padding: 7px 15px;
+}
+
+.day {
+	 border: 1px solid #DDD;
+}
+
+.trNewDay {
+	 border-top: 1px solid #DDD;
+}
+
+.dayYear {
+	display: none;
+}
+
+.halfHour {
+	opacity: 0;
+}
+
+@media only screen and (max-device-width: 1000px) {
+	.filiere, .year, .btn-toolbar {
+		margin-bottom: 1em;
+	}
+
+	.btn-toolbar {
+		margin: 0 auto 1em;
+		width: 200px;
+	}
+}
+
+@media only screen and (max-device-width: 540px) {
+	.nav > li > a {
+	    padding: 10px 5px;
+	    font-size: 13px;
+	}
+}
+
+
