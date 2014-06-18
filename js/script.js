@@ -49,9 +49,9 @@ $(document).ready(function () {
     // Setting Cookies (if you want to change default values, it's here !)
     if (typeof $.cookie('cookiesHere') == "undefined") {
         $.cookie('cookiesHere', 'true', { expires: 365 });
-        $.cookie('year', '2014', { expires: 365 });
-        $.cookie('week', '1', { expires: 365 });
-        $.cookie('filiere', 'MMI_S1', { expires: 365 });
+        $.cookie('year', (new Date()).getFullYear(), { expires: 365 });
+        $.cookie('week', getWeek(), { expires: 365 });
+        $.cookie('filiere', 'MMI_S2', { expires: 365 });
     }
 
     // Calling calendar for first load on page
@@ -123,7 +123,7 @@ function getCalendar(year, week, filiere) {
             // Get content and check if empty
             var output = $data.find('tbody').children();
             if (output.length == 0) {
-                output = "Rien à afficher !";
+                output = "<tr><td>Rien à afficher ici ! Essayez une autre semaine !</td></tr>";
             }
 
             // Output it

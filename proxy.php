@@ -7,10 +7,12 @@ $year = $_GET['year'];
 $week = $_GET['week'];
 $filiere = $_GET['filiere'];
 
+$iniConfig = parse_ini_file("config.ini");
+
 // Get PHPSESSID
 
 $url = "http://syrah.iut.u-bordeaux3.fr/gpu/sat/index.php?page_param=accueilsatellys.php&cat=0&numpage=1&niv=0&clef=/";
-$postData = "modeconnect=connect&util=sdoignon&acct_pass=123";
+$postData = 'modeconnect=connect&util=' . $iniConfig['utilisateur'] . '&acct_pass=' . $iniConfig['mdp'] ;
 $ch = curl_init();  
 curl_setopt($ch, CURLOPT_URL, $url);  
 curl_setopt($ch, CURLOPT_HEADER, 1);

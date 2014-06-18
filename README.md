@@ -1,5 +1,4 @@
 # piwakeLite
-==========
 
 Another Sattelys viewer, ligher and faster based on Javascript.
 
@@ -17,6 +16,10 @@ piwakeLite first etablish a connection to the Satellys server to get the table. 
 
 - You will need a Webserver (like Apache)
 - PHP (with the extension cURL enabled ! Uncomment 'extension=php_curl.dll' in your php.ini)
+
+> Is there a config ?
+
+Yeah, in config.ini you can specify your own Sattelys credentials. By default, there are mine.
 
 > About the author
 

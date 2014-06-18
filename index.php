@@ -62,7 +62,7 @@
 				</div>
 			</div>
 
-			<div style="overflow:auto">
+			<div style="overflow:auto;">
 				<table class="table" id="table" style="display:none;">
 
 					<thead>
